@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  p(style="text-align:center") 
+    img(src="./images/derrumbe.jpg")
+    br
+    ¿Cual es esta señal de transito?
+  form
+    label(for='radio-choice-1') Risco
+      input#radio-choice-0b.custom(type='radio', name='radio-choice-1')
+    label(for='radio-choice-2') Peligro de derrumbe
+      input#radio-choice-0b.custom(type='radio', name='radio-choice-1')
+    button.ui-btn Enviar
+
